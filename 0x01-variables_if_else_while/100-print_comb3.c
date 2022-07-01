@@ -3,7 +3,7 @@
 /**
  * main - print all possible different combinations of two digits
  *
- * Description: print double digit combinations
+ * Description: prints double digit combinations
  *
  * Return: Always 0 (Success)
  */
