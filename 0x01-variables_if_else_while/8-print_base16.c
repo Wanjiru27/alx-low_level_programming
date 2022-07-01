@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - print all numbers of base 16 in lowercase followed by new line
@@ -8,21 +7,17 @@
  */
 int main(void)
 {
-	char d = '0';
+	int i, y;
 
-	while (d <= '9')
+	for (i = 0; i < 10; i++)
 	{
-		putchar(d);
-		d++;
+		putchar (i + '0');
+	}
+	for (y = 'a'; y <= 'f'; y++)
+	{
+		putchar (y);
 	}
 
-	char c = 'a';
-
-	while (c <= 'f')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
