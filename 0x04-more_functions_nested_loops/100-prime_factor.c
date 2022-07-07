@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include<stdio.h>
 
 /**
  * main - entry point
@@ -7,18 +8,24 @@
  */
 int main(void)
 {
-	unsigned long num = 612852475143;
-	unsigned long div = 2;
+	long int i;
+	long int n;
+	long int d;
 
-	while (div < num)
+	n = 612852475143;
+	for (i = 1; i <= n; i++)
 	{
-		if (num % div == 0)
-			num /= div++;
-		else
-			div++;
+		if (n % i == 0)
+		{
+			if (n == i)
+			{
+				printf("%ld\n", i);
+				break;
+			}
+			d = n / i;
+			n = d;
+			i = 1;
+		}
 	}
-
-	printf("%1u\n", num);
-
 	return (0);
 }
