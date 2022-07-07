@@ -6,13 +6,18 @@
  */
 int main(void)
 {
-	unsigned long int i = 3, n = 612852475143;
+	unsigned long num = 612852475143;
+	unsigned long div = 2;
 
-	for (; i < 12057; i += 2)
+	while (div < num)
 	{
-		while (n % i == 0 && n != i)
-			n /= i;
+		if (num % div == 0)
+			num /= div++;
+		else
+			div++;
 	}
-	printf("%1u\n", n);
+
+	printf("%1u\n", num);
+
 	return (0);
 }
