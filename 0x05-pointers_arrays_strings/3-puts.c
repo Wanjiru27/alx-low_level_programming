@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * _puts - prints string
- * @str: input string
- * Return: no return
+ * _puts - print to the stdout
+ * @str: string
+ *
+ * Return: void
  */
-
 void _puts(char *str)
 {
-while (*str != '\0')
-{
-_putchar(*str);
-str++;
-}
-_putchar('\n');
+	char *str;
+
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	_puts(str);
+	return (0);
 }
