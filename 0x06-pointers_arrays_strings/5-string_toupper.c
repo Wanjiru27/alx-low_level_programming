@@ -3,21 +3,18 @@
 /**
  * *string_toupper - changes lowercase letters of string to uppercase
  * @s: the string to change
- * Return: the string that change for uppercase
+ * Return: pointer to destination
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-	int i;
+	int count = 0;
 
-	i = 0;
-
-	while (str[i] != '\0')
+	while (*(s + count) != '\0')
 	{
-		if (str[i] >= 97 && str[i] <= 122)
-		{
-			str[i] = str[i] - 32;
-		}
-		i++;
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		count++;
 	}
+
 	return (s);
 }
