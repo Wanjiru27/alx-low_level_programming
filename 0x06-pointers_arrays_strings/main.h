@@ -1,5 +1,7 @@
-#ifndef _main_H_
-#define _main_H_
+#ifndef MAIN_H
+#define MAIN_H
 
-char *_strcat(char *dest, char *src);
+#include <stdio.h>
+
 int _putchar(char);
+char *_strcat(char *dest, char *src);
