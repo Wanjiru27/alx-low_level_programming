@@ -4,26 +4,39 @@
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
  * @str: string
- * Return: pointer of an array of chars
+ * Return: NULL if str is NULL
+ * pointer to duplicated string on success
+ * NULL if memory was insufficient
  */
 char *_strdup(char *str)
 {
-	char *strout;
-	unsigned int i, j;
+	char *nstr;
+	unsigned int len, i;
 
+	/* check is str is null */
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
+	len = 0;
+	while (str[len] != '\0')
+	{
+		len++;
+	}
 
-	strout = (char *)malloc(sizeof(char) * (i + 1));
+	nstr = malloc(sizeof(char) * (len + 1));
 
-	if (strout == NULL)
+	/*check if malloc was successful*/
+	if (nstr == NULL)
+	{
 		return (NULL);
+	}
 
-	for (j = 0; j <= i; j++)
-		strout[j] = str[j];
-
-	return (strout);
+	for (i = 0; i < len; i++)
+	{
+		nstr[i] = str[i];
+	}
+	nstr[len] = '\0';
+	return (nstr);
 }
