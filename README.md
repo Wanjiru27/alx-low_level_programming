@@ -14,3 +14,4 @@ This is a low level programming readme file.
 0x0B-malloc_free
 0x0C-more_malloc_free
 0x0D. C - Preprocessor
+0x0E. C - Structures, typedef
