@@ -10,9 +10,10 @@ This is a low level programming readme file.
 0x07-pointers_arrays_strings
 0x08-recursion
 0x09-static_libraries
-0x0A. C - argc, argv
+0x0A-argc, argv
 0x0B-malloc_free
 0x0C-more_malloc_free
-0x0D. C - Preprocessor
-0x0E. C - Structures, typedef
+0x0D-Preprocessor
+0x0E-Structures, typedef
 0x0F-function_pointers
+0x10-variadic_functions
