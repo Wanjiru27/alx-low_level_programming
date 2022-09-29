@@ -20,3 +20,4 @@ This is a low level programming readme file.
 0x12-singly_linked_lists
 0x13-more_singly_linked_lists
 0x14-bit_manipulation
+0x17-doubly_linked_lists
