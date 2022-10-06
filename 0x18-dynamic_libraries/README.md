@@ -1,1 +1,1 @@
-s is a readme file for dynamic libraries
+0x18. C - Dynamic libraries
